@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "a44df2e9-bfde-44cc-8337-88285dd9f9d8",
+		"name": "Task Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45496891"
+	},
+	"item": [
+		{
+			"name": "getAllTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "done",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "in-progress",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "pending",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "done",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "in-progress",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1537"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"601-1ouFYx/F4yRJMS6DCDWE9u8wYjY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jun 2025 23:03:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"page\": 1,\n    \"limit\": 10,\n    \"totalTasks\": 14,\n    \"totalPages\": 2,\n    \"tasks\": [\n        {\n            \"_id\": \"6861b1e1ca02e0bca2f61a02\",\n            \"title\": \"Learn Node\",\n            \"description\": \"Work on CRUD API\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T21:36:33.847Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861bdf3d944eead102f49d6\",\n            \"title\": \"Walking\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:28:03.210Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861c2acf5defab41743ddb2\",\n            \"title\": \"running\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:48:12.355Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861c2bff5defab41743ddb5\",\n            \"title\": \"sleeping\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:48:31.733Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861c2c4f5defab41743ddb7\",\n            \"title\": \"eating\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:48:36.974Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861c2d2f5defab41743ddb9\",\n            \"title\": \"studying\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:48:50.529Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861c2e3f5defab41743ddbb\",\n            \"title\": \"gaming\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:49:07.060Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861c2eaf5defab41743ddbd\",\n            \"title\": \"books\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:49:14.358Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861c2f3f5defab41743ddbf\",\n            \"title\": \"games\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:49:23.289Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6861c307f5defab41743ddc1\",\n            \"title\": \"learn cooking\",\n            \"description\": \"Habbit\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-06-29T22:49:43.133Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "getTaskById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/6861b1e1ca02e0bca2f61a02",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"6861b1e1ca02e0bca2f61a02"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getTaskById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tasks/6861b1e1ca02e0bca2f61a02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks",
+								"6861b1e1ca02e0bca2f61a02"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "158"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e-BvudrOXKV76pA7Fj9PqABXzXA3A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jun 2025 23:04:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6861b1e1ca02e0bca2f61a02\",\n    \"title\": \"Learn Node\",\n    \"description\": \"Work on CRUD API\",\n    \"status\": \"in-progress\",\n    \"createdAt\": \"2025-06-29T21:36:33.847Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "createTasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Eat momo\",\r\n  \"description\": \"Habbit\"\r\n//   \"status\": \"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/tasks",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Eat momo\",\r\n  \"description\": \"Habbit\"\r\n//   \"status\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-BFI58L5dnY6tBa5ne/uqfkdmUoM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jun 2025 22:57:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"Eat momo\",\n    \"description\": \"Habbit\",\n    \"status\": \"pending\",\n    \"_id\": \"6861c4c45e772fc8eb512020\",\n    \"createdAt\": \"2025-06-29T22:57:08.681Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "updateTaskById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"done\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/6861b1e1ca02e0bca2f61a02",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"6861b1e1ca02e0bca2f61a02"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateTaskById",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"done\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tasks/6861b1e1ca02e0bca2f61a02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks",
+								"6861b1e1ca02e0bca2f61a02"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "151"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"97-rsncnm2j96gL4masccrY4Puo8FM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jun 2025 23:05:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6861b1e1ca02e0bca2f61a02\",\n    \"title\": \"Learn Node\",\n    \"description\": \"Work on CRUD API\",\n    \"status\": \"done\",\n    \"createdAt\": \"2025-06-29T21:36:33.847Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteTaskById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/6861b1e1ca02e0bca2f61a02",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"6861b1e1ca02e0bca2f61a02"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteTaskById",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/tasks/6861b1e1ca02e0bca2f61a02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks",
+								"6861b1e1ca02e0bca2f61a02"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-EXuvryuVXWlMt0iHutTdXWDMZ38\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jun 2025 23:05:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task deleted\"\n}"
+				}
+			]
+		}
+	]
+}
